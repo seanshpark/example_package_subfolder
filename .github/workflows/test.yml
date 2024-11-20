@@ -2,7 +2,11 @@
 
 name: test-pr
 
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/test.yml'
+      - 'compiler/tools/example_package_subfolder/**'
 
 jobs:
   test:

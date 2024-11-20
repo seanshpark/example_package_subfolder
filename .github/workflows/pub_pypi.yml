@@ -31,7 +31,7 @@ jobs:
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          packages-dir: compiler/tools/example_package_subfolder/
+          packages-dir: compiler/tools/example_package_subfolder/dist/
           skip-existing: true
           user: __token__
           password: ${{ secrets.PYPI_PUB_TOKEN }}

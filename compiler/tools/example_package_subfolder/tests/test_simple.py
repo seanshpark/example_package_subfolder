@@ -2,7 +2,7 @@
 
 import unittest
 
-import example_package_sean.example as example
+import example_package_subfolder.example as example
 
 
 class TestExample(unittest.TestCase):
